@@ -8,6 +8,9 @@ function App() {
       <Card
         title="Magic Masa"
         body="Is my chick"
+        footer={(
+          <strong>whatever you feel like</strong>
+        )}
       />
     </div>
   );

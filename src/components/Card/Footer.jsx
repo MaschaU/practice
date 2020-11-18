@@ -10,18 +10,18 @@ const useStyles = createUseStyles({
   { name: "Footer" });
 
 const Footer = (props) => {
-  const { title } = props;
+  const { children } = props;
 
   const classes = useStyles();
 
+  if (!children) return null;
   return (
-    <footer className={classes.root}>{title}</footer>
+    <footer className={classes.root}>{children}</footer>
   );
 };
 
 Footer.propTypes = {
-  title: PropTypes.node,
-
+  children: PropTypes.node,
 };
 
 

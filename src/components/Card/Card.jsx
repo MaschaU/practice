@@ -22,8 +22,7 @@ const Card = (props) => {
       <Header title={title}/>
       <Body title={body}/>
       
-      
-      {footer && <footer>{footer}</footer>}
+      <Footer>{footer}</Footer>
     </section>
   );
 };
